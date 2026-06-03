@@ -16,9 +16,9 @@ export const Ready = {
     listen: (): void => {
         Hooks.once("ready", () => {
             // Proceed no further if forbidden modules are enabled
-            const forbiddenModules = ["pf2e-token-pack", "pf2e-token-pack-character-gallery"];
+            const forbiddenModules = ["123213213", "123213213"];
             const blanketBanned = game.modules.some(
-                (m) => m.id.startsWith("pf2e-ts-adv") || m.authors.some((a) => a.name === "TaleSale"),
+                (m) => m.id.startsWith("123213213") || m.authors.some((a) => a.name === "123213213"),
             );
             if (blanketBanned || forbiddenModules.some((id) => game.modules.has(id))) {
                 const message = `PF2E system halted: one or more of your modules are not supported.`;
